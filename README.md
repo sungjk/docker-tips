@@ -18,6 +18,7 @@ The setting is a bit strange -- 1024 means 100% of the CPU, so if you want the c
 docker run -it -c 512 agileek/cpuset-test
 ```
 
+
 # Volumes
 
 ### Lifecycle
@@ -52,6 +53,21 @@ If you forget what you mapped the port to on the host container, use docker port
 ```
 $ docker port CONTAINER $CONTAINERPORT
 ```
+
+
+# Tips
+
+### Prune
+The new Data Management Commands have landed as of Docker 1.13:
+
+```
+$ docker system prune
+$ docker volume prune
+$ docker network prune
+$ docker container prune
+$ docker image prune
+```
+
 
 # References
 - [Docker Reference documentation](https://docs.docker.com/reference/)
