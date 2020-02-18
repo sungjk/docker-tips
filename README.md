@@ -1,6 +1,25 @@
 # docker-tips
 My 🐳 Docker CLI Tips and Tricks
 
+# Installation
+
+### Linux
+
+```
+$ curl -sSL https://get.docker.com/ | sh
+$ docker version
+```
+
+### macOS
+if you have Homebrew-Cask, just type:
+
+```
+$ brew cask install docker
+$ docker version
+```
+
+---
+
 # Containers
 ### Starting and Stopping
 - `docker start` starts a container so it is running.
